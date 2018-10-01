@@ -4,7 +4,7 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 <?php $db = open_database(); ?>
-<h1>Painel de Controle</h1>
+<h1>CANT FOOD</h1>
 <hr />
 
 <?php if ($db) : ?>
