@@ -1,0 +1,66 @@
+body{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.fundo {
+	width: 100%;
+	height: 730px;
+	background: url("fastfood.jpg");
+	margin: auto;
+}
+
+/* caixa de login */
+.formulario {
+	width: 360px;
+	height: 310px;
+	background: #ffff;
+	margin: 13% auto;
+	padding: 45px;
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.24);
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	margin-left: -225px;
+	margin-top: -140px;
+
+}
+
+/* campo de inserir login e senha */
+input {
+	background: #f2f2f2;
+	padding: 20px;
+	border: 0px;
+	outline: 0px;
+	width: 100%;
+	margin: 0 0 25px;
+	box-sizing: border-box;
+
+
+}
+
+/* botão entrar - login */
+.formulario button {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	background: #E84F00;
+	margin: 10px 0 10px;
+	width: 100%;
+	border: none;
+	box-sizing: border-box;
+	cursor: pointer;
+	height: 45px;
+	color: white;
+	
+}
+
+.formulario img {
+	margin-left: 115px;
+	margin-bottom: 10px;
+}
+
+button: hover{
+	opacity: 0.8;
+}

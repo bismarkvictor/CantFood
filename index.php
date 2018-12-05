@@ -1,89 +1,19 @@
-
-<?php require_once 'config.php'; ?>
-<?php require_once DBAPI; ?>
-
-<?php include(HEADER_TEMPLATE); ?>
-<?php $db = open_database(); ?>
-<h1>CANT FOOD</h1>
-<hr />
-
-<?php if ($db) : ?>
-
-<div class="row">
-
-	<div class="col-xs-6 col-sm-3 col-md-2">
-		<a href="customers" class="btn btn-default">
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<i class="fa fa-user fa-5x"></i>
-				</div>
-				<div class="col-xs-12 text-center">
-					<p>Clientes</p>
-				</div>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tela de login</title>
+		<link rel="stylesheet" href="css\estilologin.css">
+	</head>
+	<body>
+			<img src="imagens/fastfood.jpg" class="fundo">
+			<form method="post" action="login.php">
+			<div class = "formulario">
+					<img src="imagens/logo.png" width="150px" height="80px">
+					<input type="text" placeholder="Usuario" id = "login" name="user" required/>
+					<input type="password" placeholder="Senha" id = "senha" name="pass" required/>
+					<button type = "submit"> Entrar </button>
 			</div>
-		</a>
-	</div>
-
-	<div class="col-xs-6 col-sm-3 col-md-2">
-		<a href="fornecedores" class="btn btn-default">
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<i class="fa fa-truck fa-5x"></i>
-				</div>
-				<div class="col-xs-12 text-center">
-					<p>Fornecedores</p>
-				</div>
-			</div>
-		</a>
-	</div>
-
-	<div class="col-xs-6 col-sm-3 col-md-2">
-		
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<i class="fa fa-tags fa-5x"></i>
-				</div>
-				<div class="col-xs-12 text-center">
-					<p>Produtos</p>
-					
-				</div>
-			</div>
-		</a>
-	</div>
-        
-        <div class="col-xs-6 col-sm-3 col-md-2">
-		
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<i class="fa fa-shopping-cart fa-5x"></i>
-				</div>
-				<div class="col-xs-12 text-center"> 
-					<p>Pedidos</p>
-				</div>
-			</div>
-		</a>
-	</div>
-
-	 <div class="col-xs-6 col-sm-3 col-md-2">
-		
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<i class="fa fa-shopping-cart fa-5x"></i>
-				</div>
-				<div class="col-xs-12 text-center">
-					<p>Relatorios</p>
-				</div>
-			</div>
-		</a>
-	</div>
-
-</div>
-
-<?php else : ?>
-	<div class="alert alert-danger" role="alert">
-		<p><strong>ERRO:</strong> Não foi possível Conectar ao Banco de Dados!</p>
-	</div>
-
-<?php endif; ?>
-
-<?php include(FOOTER_TEMPLATE); ?>
+		</form>
+	</body>
+</html>

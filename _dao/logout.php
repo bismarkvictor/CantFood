@@ -9,5 +9,5 @@
    
     session_destroy();
     
-    header("Location: ../_login/loginInicio.php");
+    header("Location: ../index.php");
 ?>

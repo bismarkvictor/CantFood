@@ -28,21 +28,31 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="<?php echo BASEURL; ?>index.php" class="navbar-brand">CANT FOOD</a>
+          <a href="<?php echo BASEURL; ?>inicio.php" class="navbar-brand" id="home">
+              <img src="/../CantFood/imagens/logohorizontal.png" width="180px"/>
+          </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">          
+          <ul class="nav navbar-nav">
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     Gerenciar <span class="caret"></span>
                 </a>
-                <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>customers">Clientes</a></li>
-                    <li><a href="<?php echo BASEURL; ?>fornecedores">Fornecedores</a></li>
-                    <li><a href="<?php echo BASEURL; ?>produtos">Produtos</a></li>
-                </ul>
+                <ul class="dropdown-menu">-->
+                    <li><a href="<?php echo BASEURL; ?>customers">CLIENTES</a></li>
+                    <li><a href="<?php echo BASEURL; ?>fornecedores">FORNECEDORES</a></li>
+                    <li><a href="<?php echo BASEURL; ?>produtos">PRODUTOS</a></li>
+                    <li><a href="<?php echo BASEURL; ?>pedidos">PEDIDOS</a></li>
+                    <!-- <li><a href="<?php echo BASEURL; ?>#">RELATÓRIOS</a></li> -->
+                   
+                <!--</ul>-->
             </li>
+
           </ul>
+          <div>
+            <a href="_dao/logout.php">
+                    <img src="/../CantFood/imagens/Sair02.png" width="30px" style="margin-left: 380px; margin-top: 10px"/>                                  
+            </a>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
