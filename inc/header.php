@@ -51,7 +51,7 @@
           </ul>
           <div>
             <a href="_dao/logout.php">
-                    <img src="/../CantFood/imagens/Sair02.png" width="30px" style="margin-left: 380px; margin-top: 10px"/>                                  
+                <img src="/../CantFood/imagens/Sair02.png" width="30px" style="margin-left: 380px; margin-top: 10px"/>                                  
             </a>
         </div><!--/.navbar-collapse -->
       </div>
